@@ -1,64 +1,11 @@
 #Step 1 
 import random
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+from hangman_art import logo,stages
+from hangman_word_list import word_list
 lives = 6
 
-word_list = ["aardvark", "baboon", "camel"]
+#word_list = ["aardvark", "baboon", "camel"]
+print(logo)
 
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
